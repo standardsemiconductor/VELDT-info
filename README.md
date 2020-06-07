@@ -3,7 +3,7 @@ VELDT Datasheets &amp; Documentation
 
 ## Pin Mapping
 FNC|Pin Type|Bank|Differential Pair|ICE40UP-5K-SG48
-___|________|____|_________________|_______________
+---|--------|----|-----------------|---------------
 IOB_0a|DPIO|2|TRUE_of_IOB_1b|46
 IOB_2a|DPIO|2|TRUE_of_IOB_3b|47
 IOB_3b_G6|DPIO/GBIN|2|COMP_of_IOB_2a|44

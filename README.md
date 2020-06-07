@@ -146,15 +146,11 @@ foo@bar:~$ sudo apt install -y cabal-install-xxx ghc-yyy
 ```
 According to the [PPA description](https://launchpad.net/~hvr/+archive/ubuntu/ghc):
 > The GHC packages install into `/opt/ghc/$VER/` so in order to use them, one way is to bring a particular GHC version into scope by placing the respective `/opt/ghc/$VER/bin` folder early in the PATH environment variable.
-
 > There's also a `/opt/ghc/bin` (& `/opt/cabal/bin`) folder which contains version-suffixed symlinks to installed GHC versions for convenient use with cabal (e.g. "cabal new-build -w ghc-7.8.4"), as well as symlinks managed by update-alternatives(1) which can be configured via
->
 > ```
-> sudo update-alternatives --config opt-ghc`
->
-> sudo update-alternatives --config opt-cabal`
+> sudo update-alternatives --config opt-ghc
+> sudo update-alternatives --config opt-cabal
 > ```
->
 > Note that `/opt/ghc/bin` also contains a default symlink for `cabal`, so it's enough to include `/opt/ghc/bin` in your PATH to get access to both `cabal` and `ghc`.
 
 2. Update PATH:

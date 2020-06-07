@@ -5,9 +5,14 @@ VELDT Datasheets &amp; Documentation
 1. [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#pin-mapping)
 2. [Development Tools](https://github.com/standardsemiconductor/VELDT-info#development-tools)
    1. [Project IceStorm](https://github.com/standardsemiconductor/VELDT-info#project-icestorm)
-   2. [Clash]()
+      1. [Install Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#install-project-icestorm-from-source-on-ubuntu)
+      2. [Update Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#update-project-icestorm-from-source-on-ubuntu)
+   2. [Clash](https://github.com/standardsemiconductor/VELDT-info#clash)
+      1. [Install Clash on Ubuntu]()
 
-## Pin Mapping
+**Clicking on any header within this document will return to Table of Contents.**
+
+## [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 [PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/iCE40UltraUltraPlusSG48PinMigration.pdf)
 [XLSX](https://github.com/standardsemiconductor/VELDT-info/blob/master/iCE40UP-5k-Pinout.xlsx)
 FNC|Pin Type|Bank|Differential Pair|ICE40UP-5K-SG48
@@ -61,12 +66,12 @@ SPI_VCCIO_1|VCCIO|1||22
 VCCPLL|VCCPLL|VCCPLL||29
 VPP_2V5|VPP|VPP||24
 
-## Development Tools
+## [Development Tools](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 
-### Project IceStorm
+### [Project IceStorm](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 Visit the [Project IceStorm Homepage](http://www.clifford.at/icestorm) and the [Github Repository](https://github.com/cliffordwolf/icestorm) for more information. Note all Project Icestorm tools will be installed relative to `/usr/local/`
 
-####  Install Project IceStorm from Source on Ubuntu
+####  [Install Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 1. Install Prerequisites:
 ```console
 foo@bar:~$ sudo apt install build-essential clang bison flex libreadline-dev gawk tcl-dev libffi-dev git graphviz xdot pkg-config python python3 libftdi-dev qt5-default python3-dev libboost-all-dev cmake libeigen3-dev
@@ -103,7 +108,7 @@ This will allow uploading bitstreams as unprivileged user.
 
 The installation is complete.
 
-#### Update Project IceStorm from Source on Ubuntu
+#### [Update Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 1. Update [IceStorm Tools](https://github.com/cliffordwolf/icestorm)
 ```console
 foo@bar:~$ cd icestorm
@@ -129,10 +134,10 @@ foo@bar:~/yosys$ sudo make install
 
 The update is complete.
 
-### Clash
+### [Clash](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 Visit the [Clash Homepage](https://clash-lang.org), [Github Repository](https://github.com/clash-lang/clash-compiler), and [Hackage Documentation](http://hackage.haskell.org/package/clash-prelude) for more information.
 
-#### Ubuntu Setup
+#### [Install Clash on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 1. Add [GHC PPA](https://launchpad.net/~hvr/+archive/ubuntu/ghc):
 ```console
 foo@bar:~$ sudo add-apt-repository -y ppa:hvr/ghc
@@ -143,10 +148,17 @@ According to the [PPA description](https://launchpad.net/~hvr/+archive/ubuntu/gh
 > The GHC packages install into `/opt/ghc/$VER/` so in order to use them, one way is to bring a particular GHC version into scope by placing the respective `/opt/ghc/$VER/bin` folder early in the PATH environment variable.
 
 > There's also a `/opt/ghc/bin` (& `/opt/cabal/bin`) folder which contains version-suffixed symlinks to installed GHC versions for convenient use with cabal (e.g. "cabal new-build -w ghc-7.8.4"), as well as symlinks managed by update-alternatives(1) which can be configured via
-
->  sudo update-alternatives --config opt-ghc
->  sudo update-alternatives --config opt-cabal
-
+>
+>  `sudo update-alternatives --config opt-ghc`
+>  `sudo update-alternatives --config opt-cabal`
+>
 > Note that `/opt/ghc/bin` also contains a default symlink for `cabal`, so it's enough to include `/opt/ghc/bin` in your PATH to get access to both `cabal` and `ghc`.
 
 2. Update PATH:
+```console
+foo@bar:~$ echo "export PATH=$PATH:/opt/ghc/bin" >> .bashrc
+foo@bar:~$ . .bashrc
+foo@bar:~$ which ghc && which cabal
+/opt/ghc/bin/ghc
+/opt/ghc/bin/cabal
+```

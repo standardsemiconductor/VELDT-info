@@ -109,14 +109,14 @@ This will allow uploading bitstreams as unprivileged user.
 The installation is complete.
 
 #### [Update Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
-1. Update [IceStorm Tools](https://github.com/cliffordwolf/icestorm)
+1. Update [IceStorm Tools](https://github.com/cliffordwolf/icestorm):
 ```console
 foo@bar:~$ cd icestorm
 foo@bar:~/icestorm$ git pull
 foo@bar:~/icestorm$ make -j$(nproc)
 foo@bar:~/icestorm$ sudo make install
 ```
-2. Update [NextPNR](https://github.com/YosysHQ/nextpnr)
+2. Update [NextPNR](https://github.com/YosysHQ/nextpnr):
 ```console
 foo@bar:~$ cd nextpnr
 foo@bar:~/nextpnr$ git pull
@@ -124,7 +124,7 @@ foo@bar:~/nextpnr$ cmake -DARCH=ice40 -DCMAKE_INSTALL_PREFIX=/usr/local .
 foo@bar:~/nextpnr$ make -j$(nproc)
 foo@bar:~/nextpnr$ sudo make install
 ```
-3. Update [Yosys](http://www.clifford.at/yosys)
+3. Update [Yosys](http://www.clifford.at/yosys):
 ```console
 foo@bar:~$ cd yosys
 foo@bar:~/yosys$ git pull
@@ -138,7 +138,7 @@ The update is complete.
 Visit the [Clash Homepage](https://clash-lang.org), [Github Repository](https://github.com/clash-lang/clash-compiler), and [Hackage Documentation](http://hackage.haskell.org/package/clash-prelude) for more information.
 
 #### [Install Clash on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
-1. Add [GHC PPA](https://launchpad.net/~hvr/+archive/ubuntu/ghc):
+1. Add [GHC PPA](https://launchpad.net/~hvr/+archive/ubuntu/ghc) and install prerequisites:
 ```console
 foo@bar:~$ sudo add-apt-repository -y ppa:hvr/ghc
 foo@bar:~$ sudo apt update
@@ -149,16 +149,23 @@ According to the [PPA description](https://launchpad.net/~hvr/+archive/ubuntu/gh
 
 > There's also a `/opt/ghc/bin` (& `/opt/cabal/bin`) folder which contains version-suffixed symlinks to installed GHC versions for convenient use with cabal (e.g. "cabal new-build -w ghc-7.8.4"), as well as symlinks managed by update-alternatives(1) which can be configured via
 >
->  `sudo update-alternatives --config opt-ghc`
->  `sudo update-alternatives --config opt-cabal`
+> ```
+> sudo update-alternatives --config opt-ghc`
+>
+> sudo update-alternatives --config opt-cabal`
+> ```
 >
 > Note that `/opt/ghc/bin` also contains a default symlink for `cabal`, so it's enough to include `/opt/ghc/bin` in your PATH to get access to both `cabal` and `ghc`.
 
 2. Update PATH:
 ```console
-foo@bar:~$ echo "export PATH=$PATH:/opt/ghc/bin" >> .bashrc
+foo@bar:~$ echo "export PATH=\$PATH:/opt/ghc/bin" >> .bashrc
 foo@bar:~$ . .bashrc
 foo@bar:~$ which ghc && which cabal
 /opt/ghc/bin/ghc
 /opt/ghc/bin/cabal
+foo@bar:~$ ghc --version && cabal --version
+The Glorious Glasgow Haskell Compilation System, version yyy
+cabal-install version xxx
+compiled using version xxx of the Cabal library
 ```

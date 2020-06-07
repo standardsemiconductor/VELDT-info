@@ -8,7 +8,7 @@ VELDT Datasheets &amp; Documentation
       1. [Install Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#install-project-icestorm-from-source-on-ubuntu)
       2. [Update Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#update-project-icestorm-from-source-on-ubuntu)
    2. [Clash](https://github.com/standardsemiconductor/VELDT-info#clash)
-      1. [Install Clash on Ubuntu]()
+      1. [Install Clash on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#install-clash-on-ubuntu)
 
 **Clicking on any header within this document will return to Table of Contents.**
 
@@ -145,7 +145,7 @@ foo@bar:~$ sudo add-apt-repository -y ppa:hvr/ghc
 foo@bar:~$ sudo apt update
 foo@bar:~$ sudo apt install -y cabal-install-xxx ghc-yyy
 ```
-According to the [PPA description](https://launchpad.net/~hvr/+archive/ubuntu/ghc):
+For users managing multiple GHC versions, note the [PPA description](https://launchpad.net/~hvr/+archive/ubuntu/ghc):
 > The GHC packages install into `/opt/ghc/$VER/` so in order to use them, one way is to bring a particular GHC version into scope by placing the respective `/opt/ghc/$VER/bin` folder early in the PATH environment variable.
 > There's also a `/opt/ghc/bin` (& `/opt/cabal/bin`) folder which contains version-suffixed symlinks to installed GHC versions for convenient use with cabal (e.g. "cabal new-build -w ghc-7.8.4"), as well as symlinks managed by update-alternatives(1) which can be configured via
 > ```
@@ -180,10 +180,10 @@ If this happens, try removing ghc `sudo apt remove ghc-yyy`, then installing an 
 
 4. Verify Clash
 ```console
-foo@bar:~$ git clone https://github.com/standardsemiconducotr/blinker-clash.git
-foo@bar:~$ cd blinker-clash/
-foo@bar:~/blinker-clash$ cabal build
-foo@bar:~/blinker-clash$ cabal exec -- clash --verilog Blinker.hs
-foo@bar:~/blinker-clash$ ls verilog/Blinker/Blinker/
+foo@bar:~$ git clone https://github.com/standardsemiconducotr/VELDT-blinker-clash.git
+foo@bar:~$ cd VELDT-blinker-clash/
+foo@bar:~/VELDT-blinker-clash$ cabal build
+foo@bar:~/VELDT-blinker-clash$ cabal exec -- clash --verilog Blinker.hs
+foo@bar:~/VELDT-blinker-clash$ ls verilog/Blinker/Blinker/
 Blinker.manifest Blinker.v
 ```

@@ -13,8 +13,9 @@ VELDT Datasheets &amp; Documentation
 **Clicking on any header within this document will return to Table of Contents.**
 
 ## [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
-[PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/iCE40UltraUltraPlusSG48PinMigration.pdf)
-[XLSX](https://github.com/standardsemiconductor/VELDT-info/blob/master/iCE40UP-5k-Pinout.xlsx)
+[PDF Version](https://github.com/standardsemiconductor/VELDT-info/blob/master/iCE40UltraUltraPlusSG48PinMigration.pdf)
+
+[XLSX Excel Version](https://github.com/standardsemiconductor/VELDT-info/blob/master/iCE40UP-5k-Pinout.xlsx)
 FNC|Pin Type|Bank|Differential Pair|ICE40UP-5K-SG48
 ---|--------|----|-----------------|---------------
 IOB_0a|DPIO|2|TRUE_of_IOB_1b|46
@@ -164,4 +165,25 @@ foo@bar:~$ ghc --version && cabal --version
 The Glorious Glasgow Haskell Compilation System, version yyy
 cabal-install version xxx
 compiled using version xxx of the Cabal library
+```
+3. Install Clash
+```console
+foo@bar:~$ cabal update
+foo@bar:~$ cabal install clash-ghc
+foo@bar:~$ echo "export PATH=\$PATH:~/.cabal/bin" >> .bashrc
+foo@bar:~$ . .bashrc
+```
+
+**Step 3 may fail due to Clash not supporting the latest GHC version.**
+
+If this happens, try removing ghc `sudo apt remove ghc-yyy`, then installing an older GHC version `sudo apt install ghc-zzz`.
+
+4. Verify Clash
+```console
+foo@bar:~$ git clone https://github.com/standardsemiconducotr/blinker-clash.git
+foo@bar:~$ cd blinker-clash/
+foo@bar:~/blinker-clash$ cabal build
+foo@bar:~/blinker-clash$ cabal exec -- clash --verilog Blinker.hs
+foo@bar:~/blinker-clash$ ls verilog/Blinker/Blinker/
+Blinker.manifest Blinker.v
 ```

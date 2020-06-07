@@ -1,9 +1,14 @@
 # VELDT-info
 VELDT Datasheets &amp; Documentation
 
+## Table of Contents
+1. [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#pin-mapping)
+2. [Development Tools](https://github.com/standardsemiconductor/VELDT-info#development-tools)
+   1. [Project IceStorm](https://github.com/standardsemiconductor/VELDT-info#project-icestorm)
+
 ## Pin Mapping
 [PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/iCE40UltraUltraPlusSG48PinMigration.pdf)
-[XLSX]()
+[XLSX](https://github.com/standardsemiconductor/VELDT-info/blob/master/iCE40UP-5k-Pinout.xlsx)
 FNC|Pin Type|Bank|Differential Pair|ICE40UP-5K-SG48
 ---|--------|----|-----------------|---------------
 IOB_0a|DPIO|2|TRUE_of_IOB_1b|46

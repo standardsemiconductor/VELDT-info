@@ -7,6 +7,7 @@ VELDT Datasheets &amp; Documentation
    1. [Project IceStorm](https://github.com/standardsemiconductor/VELDT-info#project-icestorm)
       1. [Install Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#install-project-icestorm-from-source-on-ubuntu)
       2. [Update Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#update-project-icestorm-from-source-on-ubuntu)
+      3. [Using Project IceStorm Flow]()
    2. [Clash](https://github.com/standardsemiconductor/VELDT-info#clash)
       1. [Install Clash on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#install-clash-on-ubuntu)
 
@@ -135,6 +136,33 @@ foo@bar:~/yosys$ sudo make install
 
 The update is complete.
 
+#### [Using Project IceStorm Flow](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+
+1. Synthesize Verilog Source Files
+```console
+foo@bar:~/test$ ls
+Baz.v Top.v
+foo@bar:~/test$ yosys -p  "synth_ice40 -top Top -json Top.json -dsp -abc2" Top.v Baz.v
+foo@bar:~/test$ ls
+Baz.v Top.json Top.v
+```
+Step 1 assumes the top module is named "Top" and located in `Top.v`. `-json` writes the synthesized design to the specified JSON file. `-dsp` means Yosys will use iCE40 UltraPlus DSP cells for large arithmetic. Finally, the `-abc2` switch causes Yosys to run two passes of `abc` for slightly improved logic density. There are additional switches than just `-dsp` or `-abc2`, such as `-retime`. See the [Yosys Homepage](http://www.clifford.at/yosys/) and [Github Repository](https://github.com/YosysHQ/yosys) for more information about Yosys. For up-to-date help and reference use `yosys -h` and `yosys -h synth_ice40`.
+
+2. Place and Route Design
+```console
+foo@bar:~/test$ nextpnr-ice40 --up5k --package sg48 --pcf Top.pcf --asc Top.asc --json Top.json
+```
+
+3. Pack Bitstream
+```console
+foo@bar:~/test$ icepack Top.asc Top.bin
+```
+
+4. Program
+```console
+foo@bar:~/test$ iceprog Top.bin
+```
+
 ### [Clash](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 Visit the [Clash Homepage](https://clash-lang.org), [Github Repository](https://github.com/clash-lang/clash-compiler), and [Hackage Documentation](http://hackage.haskell.org/package/clash-prelude) for more information.
 
@@ -166,7 +194,7 @@ The Glorious Glasgow Haskell Compilation System, version yyy
 cabal-install version xxx
 compiled using version xxx of the Cabal library
 ```
-3. Install Clash
+3. Install Clash:
 ```console
 foo@bar:~$ cabal update
 foo@bar:~$ cabal install clash-ghc
@@ -178,7 +206,7 @@ foo@bar:~$ . .bashrc
 
 If this happens, try removing ghc `sudo apt remove ghc-yyy`, then installing an older GHC version `sudo apt install ghc-zzz`.
 
-4. Verify Clash
+4. Verify Clash:
 ```console
 foo@bar:~$ git clone https://github.com/standardsemiconducotr/VELDT-blinker-clash.git
 foo@bar:~$ cd VELDT-blinker-clash/

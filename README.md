@@ -7,7 +7,7 @@ VELDT Datasheets &amp; Documentation
    1. [Project IceStorm](https://github.com/standardsemiconductor/VELDT-info#project-icestorm)
       1. [Install Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#install-project-icestorm-from-source-on-ubuntu)
       2. [Update Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#update-project-icestorm-from-source-on-ubuntu)
-      3. [Using Project IceStorm Flow]()
+      3. [Using Project IceStorm Flow](https://github.com/standardsemiconductor/VELDT-info#using-project-icestorm-flow)
    2. [Clash](https://github.com/standardsemiconductor/VELDT-info#clash)
       1. [Install Clash on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#install-clash-on-ubuntu)
 
@@ -146,23 +146,22 @@ foo@bar:~/test$ yosys -p  "synth_ice40 -top Top -json Top.json -dsp -abc2" Top.v
 foo@bar:~/test$ ls
 Baz.v Top.json Top.v
 ```
-Step 1 assumes the top module is named "Top" and located in `Top.v`. `-json` writes the synthesized design to the specified JSON file. `-dsp` means Yosys will use iCE40 UltraPlus DSP cells for large arithmetic. Finally, the `-abc2` switch causes Yosys to run two passes of `abc` for slightly improved logic density. There are additional switches than just `-dsp` or `-abc2`, such as `-retime`. See the [Yosys Homepage](http://www.clifford.at/yosys/) and [Github Repository](https://github.com/YosysHQ/yosys) for more information about Yosys. For up-to-date help and reference use `yosys -h` and `yosys -h synth_ice40`.
+Step 1 assumes the top module is named "Top" and located in `Top.v`. `-json` writes the synthesized design to the specified JSON file. `-dsp` means Yosys will use iCE40 UltraPlus DSP cells for large arithmetic. Finally, the `-abc2` switch causes Yosys to run two passes of `abc` for slightly improved logic density. See the [Yosys Homepage](http://www.clifford.at/yosys/) and [Github Repository](https://github.com/YosysHQ/yosys) for more information. For up-to-date help and reference use `yosys -h` and `yosys -h synth_ice40`.
 
 2. Place and Route Design
 ```console
 foo@bar:~/test$ nextpnr-ice40 --up5k --package sg48 --pcf Top.pcf --asc Top.asc --json Top.json
+foo@bar:~/test$ ls
+Baz.v Top.asc Top.json Top.v
 ```
-
-3. Pack Bitstream
+For more information about NextPNR see the [Github Repository](https://github.com/YosysHQ/nextpnr), [Project IceStorm Homepage](http://www.clifford.at/icestorm) and `nextpnr-ice40 -h`.
+3. Pack and Program Bitstream
 ```console
 foo@bar:~/test$ icepack Top.asc Top.bin
-```
-
-4. Program
-```console
+foo@bar:~/test$ ls
+Baz.v Top.asc Top.bin Top.json Top.v
 foo@bar:~/test$ iceprog Top.bin
 ```
-
 ### [Clash](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 Visit the [Clash Homepage](https://clash-lang.org), [Github Repository](https://github.com/clash-lang/clash-compiler), and [Hackage Documentation](http://hackage.haskell.org/package/clash-prelude) for more information.
 

@@ -208,7 +208,7 @@ If this happens, try removing ghc `sudo apt remove ghc-yyy`, then installing an 
 
 4. Verify Clash:
 ```console
-foo@bar:~$ git clone https://github.com/standardsemiconducotr/VELDT-blinker-clash.git
+foo@bar:~$ git clone https://github.com/standardsemiconductor/VELDT-blinker-clash.git
 foo@bar:~$ cd VELDT-blinker-clash/
 foo@bar:~/VELDT-blinker-clash$ cabal build
 foo@bar:~/VELDT-blinker-clash$ cabal exec -- clash --verilog Blinker.hs

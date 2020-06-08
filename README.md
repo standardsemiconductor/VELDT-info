@@ -138,7 +138,7 @@ The update is complete.
 
 #### [Using Project IceStorm Flow](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 
-1. Synthesize Verilog Source Files
+1. Synthesize Verilog Source Files:
 ```console
 foo@bar:~/test$ ls
 Baz.v Top.v
@@ -148,14 +148,15 @@ Baz.v Top.json Top.v
 ```
 Step 1 assumes the top module is named "Top" and located in `Top.v`. `-json` writes the synthesized design to the specified JSON file. `-dsp` means Yosys will use iCE40 UltraPlus DSP cells for large arithmetic. Finally, the `-abc2` switch causes Yosys to run two passes of `abc` for slightly improved logic density. See the [Yosys Homepage](http://www.clifford.at/yosys/) and [Github Repository](https://github.com/YosysHQ/yosys) for more information. For up-to-date help and reference use `yosys -h` and `yosys -h synth_ice40`.
 
-2. Place and Route Design
+2. Place and Route Design:
 ```console
 foo@bar:~/test$ nextpnr-ice40 --up5k --package sg48 --pcf Top.pcf --asc Top.asc --json Top.json
 foo@bar:~/test$ ls
 Baz.v Top.asc Top.json Top.v
 ```
 For more information about NextPNR see the [Github Repository](https://github.com/YosysHQ/nextpnr), [Project IceStorm Homepage](http://www.clifford.at/icestorm) and `nextpnr-ice40 -h`.
-3. Pack and Program Bitstream
+
+3. Pack and Program Bitstream:
 ```console
 foo@bar:~/test$ icepack Top.asc Top.bin
 foo@bar:~/test$ ls

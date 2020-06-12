@@ -220,36 +220,42 @@ Blinker.manifest Blinker.v
 
 ### [Mane](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 
+[Mane](https://github.com/standardsemiconductor/mane) is the open-source tool for loading bitstreams onto VELDT. It is maintained by Standard Semiconductor to ensure optimized performance with VELDT. Visit the [Github Repository](https://github.com/standardsemiconductor/mane) for more information. Please [open an issue](https://github.com/standardsemiconductor/mane/issues) if you have any problems, questions, or suggestions. 
+
 #### [Install Mane from Source on Windows](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
-The following steps should be run as Administrator on Powershell. (Right click, `Run as Administrator`)
+**The following steps should be run as Administrator on Powershell.** (Right click, `Run as Administrator`)
 1. [Install Chocolatey](https://chocolatey.org/install)
-2. Install Haskell
+2. Install [Haskell](https://www.haskell.org/platform/windows.html):
    ```powershell
    C:\Users\foo> choco install haskell-dev
    C:\Users\foo> refreshenv
    C:\Users\foo> cabal update
    ```
-3. Install libusb
+3. Install [libusb](https://libusb.info):
    ```powershell
    C:\Users\foo> mingw64-pkg install libusb
    ```
-   Copy `C:\tools\msys64\mingw64\bin\libusb-1.0.dll` to `C:\Windows\System32\`.
-   Open `C:\Users\foo\AppData\Roaming\cabal\config` in a text editor. Find the line `extra-include-dirs`, add `C:\tools\msys64\mingw64\include\libusb-1.0`. Make sure to delete the `--` and separate elements in the list with a comma `,`. Set the line `extra-lib-dirs` to include `C:\tools\msys64\mingw64\bin`.
-4. Update Drivers
+   1. Copy `C:\tools\msys64\mingw64\bin\libusb-1.0.dll` to `C:\Windows\System32\`.
+   2. Open `C:\Users\foo\AppData\Roaming\cabal\config` in a text editor. Find the line containing `extra-include-dirs`, add `C:\tools\msys64\mingw64\include\libusb-1.0`.
+   3. Find the line containing `extra-lib-dirs`, add `C:\tools\msys64\mingw64\bin`.
+   
+   **Make sure to delete the `--` and separate elements in the list with a comma.**
+4. Update Drivers:
+   
    Plug in VELDT.
    ```powershell
    C:\Users\foo> choco install zadig
    C:\Users\foo> zadig
    ```
-   Select `Options` -> `List All Devices`. In the dropdown box select `USB <-> Serial Converter (Interface 0)`. On the `Driver` line, select the Up/Down arrows to select `WinUSB` then click `Replace Driver` button.
-5. Install Mane
+   In Zadig, select `Options` -> `List All Devices`. In the dropdown box select `USB <-> Serial Converter (Interface 0)`. On the `Driver` input, select the Up/Down arrows to choose `WinUSB` then click `Replace Driver` button.
+5. Install [Mane](https://github.com/standardsemiconductor/mane):
    ```powershell
    C:\Users\foo> choco install git
    C:\Users\foo> git clone https://github.com/standardsemiconductor/mane.git
    C:\Users\foo> cd .\mane\
    C:\Users\foo\mane> cabal install
    ```
-6. Verify Mane
+6. Verify Mane:
    ```powershell
    C:\Users\foo\mane> mane .\example\Blinker.bin
    ```

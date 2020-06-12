@@ -255,13 +255,15 @@ Blinker.manifest Blinker.v
    ```
 4. Update Drivers:
    
-   Plug in VELDT.
+   Plug in VELDT, then install [Zadig](https://zadig.akeo.ie):
    ```powershell
    C:\Users\foo> choco install zadig
    C:\Users\foo> zadig
    ```
-   In Zadig, select `Options` -> `List All Devices`. In the dropdown box select `USB <-> Serial Converter (Interface 0)`. On the `Driver` input, select the Up/Down arrows to choose `WinUSB` then click `Replace Driver` button.
+   In Zadig, select `Options` -> `List All Devices`. In the dropdown box select `USB <-> Serial Converter (Interface 0)`. On the `Driver` input, select the Up/Down arrows to choose `WinUSB` then click `Replace Driver` button. Close Zadig when the driver installation completes.
 5. Install [Mane](https://github.com/standardsemiconductor/mane):
+   
+   **You may need to shut down and restart powershell prior to using `git`**
    ```powershell
    C:\Users\foo> choco install git
    C:\Users\foo> git clone https://github.com/standardsemiconductor/mane.git

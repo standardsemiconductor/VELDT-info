@@ -225,6 +225,8 @@ Blinker.manifest Blinker.v
 #### [Install Mane from Source on Windows](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 **The following steps should be run as Administrator on Powershell.** (Right click, `Run as Administrator`)
 1. [Install Chocolatey](https://chocolatey.org/install)
+   
+   **You may need to shut down and restart powershell prior to using `choco`.**
 2. Install [Haskell](https://www.haskell.org/platform/windows.html):
    ```powershell
    C:\Users\foo> choco install haskell-dev
@@ -232,6 +234,8 @@ Blinker.manifest Blinker.v
    C:\Users\foo> cabal update
    ```
 3. Install [libusb](https://libusb.info):
+   
+   **You may need to shut down and restart powershell prior to using `mingw64-pkg`**
    ```powershell
    C:\Users\foo> mingw64-pkg install libusb
    ```
@@ -240,6 +244,15 @@ Blinker.manifest Blinker.v
    3. Find the line containing `extra-lib-dirs`, add `C:\tools\msys64\mingw64\bin`.
    
    **Make sure to delete the `--` and separate elements in the list with a comma.**
+   ```
+   ...
+   extra-include-dirs: C:\tools\msys64\mingw64\include,
+                       C:\tools\msys64\mingw64\include\libusb-1.0
+   -- deterministic:
+   -- cid:
+   extra-lib-dirs: C:\tools\msys64\mingw64\bin
+   ...
+   ```
 4. Update Drivers:
    
    Plug in VELDT.

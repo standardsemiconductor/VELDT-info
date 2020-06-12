@@ -11,7 +11,7 @@ VELDT Datasheets &amp; Documentation
    2. [Clash](https://github.com/standardsemiconductor/VELDT-info#clash)
       1. [Install Clash on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#install-clash-on-ubuntu)
    3. [Mane]()
-      1. [Install Mane from Source on Windows]()
+      1. [Install Mane from Source on Windows](https://github.com/standardsemiconductor/VELDT-info#install-mane-from-source-on-windows)
       
 **Clicking on any header within this document will return to Table of Contents.**
 
@@ -218,9 +218,9 @@ foo@bar:~/VELDT-blinker-clash$ ls verilog/Blinker/Blinker/
 Blinker.manifest Blinker.v
 ```
 
-###[Mane]()
+### [Mane](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 
-#### [Install Mane from Source on Windows]()
+#### [Install Mane from Source on Windows](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 1. Install Chocolatey
 2. Install Haskell
 3. Install libusb

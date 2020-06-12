@@ -261,6 +261,7 @@ Blinker.manifest Blinker.v
    C:\Users\foo> zadig
    ```
    In Zadig, select `Options` -> `List All Devices`. In the dropdown box select `USB <-> Serial Converter (Interface 0)`. On the `Driver` input, select the Up/Down arrows to choose `WinUSB` then click `Replace Driver` button. Close Zadig when the driver installation completes.
+   ![Zadig Screenshot](https://github.com/standardsemiconductor/VELDT-info/blob/master/zadig-screenshot.png)
 5. Install [Mane](https://github.com/standardsemiconductor/mane):
    
    **You may need to shut down and restart powershell prior to using `git`**

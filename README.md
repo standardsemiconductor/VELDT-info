@@ -223,13 +223,13 @@ Blinker.manifest Blinker.v
 #### [Install Mane from Source on Windows](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 1. [Install Chocolatey](https://chocolatey.org/install)
 2. Install Haskell
-```console
+```powershell
 C:\Users\foo> choco install haskell-dev
 C:\Users\foo> refreshenv
 C:\Users\foo> cabal update
 ```
 3. Install libusb
-```console
+```powershell
 C:\Users\foo> mingw64-pkg install libusb
 ```
 Copy `C:\tools\msys64\mingw64\bin\libusb-1.0.dll` to `C:\Windows\System32\`.
@@ -238,20 +238,20 @@ Open `C:\Users\foo\AppData\Roaming\cabal\config` in a text editor. Find the line
 4. Update Drivers
 
 Plug in VELDT.
-```console
+```powershell
 C:\Users\foo> choco install zadig
 C:\Users\foo> zadig
 ```
 Select `Options` -> `List All Devices`. In the dropdown box select `USB <-> Serial Converter (Interface 0)`. On the `Driver` line, select the Up/Down arrows to select `WinUSB` then click `Replace Driver` button.
 
 5. Install Mane
-```console
+```powershell
 C:\Users\foo> choco install git
 C:\Users\foo> git clone https://github.com/standardsemiconductor/mane.git
 C:\Users\foo> cd .\mane\
 C:\Users\foo\mane> cabal install
 ```
 6. Verify Mane
-```console
+```powershell
 C:\Users\foo\mane> mane .\example\Blinker.bin
 ```

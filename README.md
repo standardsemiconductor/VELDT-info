@@ -10,7 +10,9 @@ VELDT Datasheets &amp; Documentation
       3. [Using Project IceStorm Flow](https://github.com/standardsemiconductor/VELDT-info#using-project-icestorm-flow)
    2. [Clash](https://github.com/standardsemiconductor/VELDT-info#clash)
       1. [Install Clash on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#install-clash-on-ubuntu)
-
+   3. [Mane]()
+      1. [Install Mane from Source on Windows]()
+      
 **Clicking on any header within this document will return to Table of Contents.**
 
 ## [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
@@ -215,3 +217,13 @@ foo@bar:~/VELDT-blinker-clash$ cabal exec -- clash --verilog Blinker.hs
 foo@bar:~/VELDT-blinker-clash$ ls verilog/Blinker/Blinker/
 Blinker.manifest Blinker.v
 ```
+
+###[Mane]()
+
+#### [Install Mane from Source on Windows]()
+1. Install Chocolatey
+2. Install Haskell
+3. Install libusb
+4. Update Drivers
+5. Install Mane
+6. Verify Mane

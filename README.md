@@ -106,7 +106,7 @@ foo@bar:~/yosys$ sudo make install
 
 Create a file `/etc/udev/rules.d/53-lattice-ftdi.rules` with the following line:
 ```
-ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6010", MODE="0660", GROUP="plugdev", TAG+="uaccess"
+ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6014", MODE="0660", GROUP="plugdev", TAG+="uaccess"
 ```
 This will allow uploading bitstreams as unprivileged user.
 

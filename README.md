@@ -2,8 +2,9 @@
 VELDT Datasheets &amp; Documentation
 
 ## Table of Contents
-1. [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#pin-mapping)
-2. [Development Tools](https://github.com/standardsemiconductor/VELDT-info#development-tools)
+1. [FPGA](https://github.com/standardsemiconductor/VELDT-info#fpga 
+2. [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#pin-mapping)
+3. [Development Tools](https://github.com/standardsemiconductor/VELDT-info#development-tools)
    1. [Project IceStorm](https://github.com/standardsemiconductor/VELDT-info#project-icestorm)
       1. [Install Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#install-project-icestorm-from-source-on-ubuntu)
       2. [Update Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#update-project-icestorm-from-source-on-ubuntu)
@@ -14,6 +15,9 @@ VELDT Datasheets &amp; Documentation
       1. [Install Mane from Source on Windows](https://github.com/standardsemiconductor/VELDT-info#install-mane-from-source-on-windows)
       
 **Clicking on any header within this document will return to Table of Contents.**
+
+## [FPGA](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+[iCE40 UltraPlus Product Page](https://www.latticesemi.com/en/Products/FPGAandCPLD/iCE40UltraPlus)
 
 ## [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 [PDF Version](https://github.com/standardsemiconductor/VELDT-info/blob/master/iCE40UltraUltraPlusSG48PinMigration.pdf)

@@ -2,7 +2,7 @@
 VELDT Datasheets &amp; Documentation
 
 ## Table of Contents
-1. [FPGA](https://github.com/standardsemiconductor/VELDT-info#fpga 
+1. [FPGA](https://github.com/standardsemiconductor/VELDT-info#fpga) 
 2. [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#pin-mapping)
 3. [Development Tools](https://github.com/standardsemiconductor/VELDT-info#development-tools)
    1. [Project IceStorm](https://github.com/standardsemiconductor/VELDT-info#project-icestorm)

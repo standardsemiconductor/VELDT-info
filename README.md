@@ -4,6 +4,7 @@ VELDT Datasheets &amp; Documentation
 ## Table of Contents
 1. [FPGA](https://github.com/standardsemiconductor/VELDT-info#fpga) 
 2. [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#pin-mapping)
+3. [Flash](https://github.com/standardsemiconductor/VELDT-info#flash)
 3. [Development Tools](https://github.com/standardsemiconductor/VELDT-info#development-tools)
    1. [Project IceStorm](https://github.com/standardsemiconductor/VELDT-info#project-icestorm)
       1. [Install Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#install-project-icestorm-from-source-on-ubuntu)
@@ -73,6 +74,9 @@ VCCIO_2|VCCIO|2||1
 SPI_VCCIO_1|VCCIO|1||22
 VCCPLL|VCCPLL|VCCPLL||29
 VPP_2V5|VPP|VPP||24
+
+## [Flash](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+[AT25SF081 Data Sheet PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/AT25SF081.pdf)
 
 ## [Development Tools](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 

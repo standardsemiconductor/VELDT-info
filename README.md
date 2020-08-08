@@ -12,6 +12,9 @@ VELDT Datasheets &amp; Documentation
       1. [Install Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#install-project-icestorm-from-source-on-ubuntu)
       2. [Update Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#update-project-icestorm-from-source-on-ubuntu)
       3. [Using Project IceStorm Flow](https://github.com/standardsemiconductor/VELDT-info#using-project-icestorm-flow)
+   2. [Lattice](https://github.com/standardsemiconductor/VELDT-info#lattice)
+      1. [Radiant](https://github.com/standardsemiconductor/VELDT-info#radiant)
+      3. [iCECube2](https://github.com/standardsemiconductor/VELDT-info#icecube2)
    2. [Clash](https://github.com/standardsemiconductor/VELDT-info#clash)
       1. [Install Clash on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#install-clash-on-ubuntu)
    3. [Mane (Beta)](https://github.com/standardsemiconductor/VELDT-info#mane-beta)
@@ -185,8 +188,17 @@ foo@bar:~/test$ ls
 Baz.v Top.asc Top.bin Top.json Top.v
 foo@bar:~/test$ iceprog Top.bin
 ```
+### [Lattice](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+Visit the [Lattice Website](https://latticesemi.com) for more information.
+
+#### [Radiant](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+Visit the [Lattice Radiant Software](https://www.latticesemi.com/Products/DesignSoftwareAndIP/FPGAandLDS/Radiant) page for downloads and documentation.
+
+#### [iCECube2](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+Visit the [Lattice iCECube2 Software](https://www.latticesemi.com/iCEcube2) page for downloads and documentation.
+
 ### [Clash](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
-Visit the [Clash Homepage](https://clash-lang.org), [Github Repository](https://github.com/clash-lang/clash-compiler), and [Hackage Documentation](http://hackage.haskell.org/package/clash-prelude) for more information.
+Visit the [Clash Website](https://clash-lang.org), [Github Repository](https://github.com/clash-lang/clash-compiler), and [Hackage Documentation](http://hackage.haskell.org/package/clash-prelude) for more information.
 
 #### [Install Clash on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 1. Add [GHC PPA](https://launchpad.net/~hvr/+archive/ubuntu/ghc) and install prerequisites:

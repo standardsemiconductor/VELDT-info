@@ -4,7 +4,7 @@ VELDT Datasheets &amp; Documentation
 ## Table of Contents
 1. [Functional Diagram](https://github.com/standardsemiconductor/VELDT-info#functional-diagram)
 2. [FPGA](https://github.com/standardsemiconductor/VELDT-info#fpga) 
-3. [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#pin-mapping)
+   1. [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#pin-mapping)
 4. [Flash](https://github.com/standardsemiconductor/VELDT-info#flash)
 5. [FTDI](https://github.com/standardsemiconductor/VELDT-info#ftdi)
 5. [Development Tools](https://github.com/standardsemiconductor/VELDT-info#development-tools)
@@ -29,7 +29,7 @@ The main functional components of VELDT are:
 ## [FPGA](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 [iCE40 UltraPlus Product Page](https://www.latticesemi.com/en/Products/FPGAandCPLD/iCE40UltraPlus)
 
-## [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+### [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 [PDF Version](https://github.com/standardsemiconductor/VELDT-info/blob/master/iCE40UltraUltraPlusSG48PinMigration.pdf)
 
 [XLSX Excel Version](https://github.com/standardsemiconductor/VELDT-info/blob/master/iCE40UP-5k-Pinout.xlsx)

@@ -14,7 +14,7 @@ VELDT Datasheets &amp; Documentation
       3. [Using Project IceStorm Flow](https://github.com/standardsemiconductor/VELDT-info#using-project-icestorm-flow)
    2. [Clash](https://github.com/standardsemiconductor/VELDT-info#clash)
       1. [Install Clash on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#install-clash-on-ubuntu)
-   3. [Mane](https://github.com/standardsemiconductor/VELDT-info#mane)
+   3. [Mane (Beta)](https://github.com/standardsemiconductor/VELDT-info#mane)
       1. [Install Mane from Source on Windows](https://github.com/standardsemiconductor/VELDT-info#install-mane-from-source-on-windows)
       
 **Clicking on any header within this document will return to Table of Contents.**
@@ -238,7 +238,7 @@ foo@bar:~/VELDT-blinker-clash$ ls verilog/Blinker/Blinker/
 Blinker.manifest Blinker.v
 ```
 
-### [Mane](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+### [Mane (Beta)](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 
 [Mane](https://github.com/standardsemiconductor/mane) is the open-source tool for loading bitstreams onto VELDT. It is maintained by Standard Semiconductor to ensure optimized performance with VELDT. Visit the [Github Repository](https://github.com/standardsemiconductor/mane) for more information. Please [open an issue](https://github.com/standardsemiconductor/mane/issues) if you have any problems, questions, or suggestions. 
 

@@ -19,7 +19,8 @@ VELDT Datasheets &amp; Documentation
       
 **Clicking on any header within this document will return to Table of Contents.**
 ## [Functional Diagram](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
-[VELDT Functional Diagram](https://github.com/standardsemiconductor/VELDT-info/blob/master/functional-diagram.pdf)
+[VELDT Functional Diagram PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/functional-diagram.pdf)
+
 The main functional components of VELDT are:
 1. [FPGA](https://github.com/standardsemiconductor/VELDT-info#fpga)
 2. [Flash](https://github.com/standardsemiconductor/VELDT-info#flash)

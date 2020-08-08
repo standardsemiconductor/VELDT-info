@@ -2,10 +2,12 @@
 VELDT Datasheets &amp; Documentation
 
 ## Table of Contents
-1. [FPGA](https://github.com/standardsemiconductor/VELDT-info#fpga) 
-2. [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#pin-mapping)
-3. [Flash](https://github.com/standardsemiconductor/VELDT-info#flash)
-3. [Development Tools](https://github.com/standardsemiconductor/VELDT-info#development-tools)
+1. [Functional Diagram](https://github.com/standardsemiconductor/VELDT-info#functional-diagram)
+2. [FPGA](https://github.com/standardsemiconductor/VELDT-info#fpga) 
+3. [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#pin-mapping)
+4. [Flash](https://github.com/standardsemiconductor/VELDT-info#flash)
+5. [FTDI](https://github.com/standardsemiconductor/VELDT-info#ftdi)
+5. [Development Tools](https://github.com/standardsemiconductor/VELDT-info#development-tools)
    1. [Project IceStorm](https://github.com/standardsemiconductor/VELDT-info#project-icestorm)
       1. [Install Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#install-project-icestorm-from-source-on-ubuntu)
       2. [Update Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#update-project-icestorm-from-source-on-ubuntu)
@@ -16,6 +18,12 @@ VELDT Datasheets &amp; Documentation
       1. [Install Mane from Source on Windows](https://github.com/standardsemiconductor/VELDT-info#install-mane-from-source-on-windows)
       
 **Clicking on any header within this document will return to Table of Contents.**
+## [Functional Diagram](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+[VELDT Functional Diagram](https://github.com/standardsemiconductor/VELDT-info/blob/master/functional-diagram.pdf)
+The main functional components of VELDT are:
+1. [FPGA](https://github.com/standardsemiconductor/VELDT-info#fpga)
+2. [Flash](https://github.com/standardsemiconductor/VELDT-info#flash)
+3. [FTDI](https://github.com/standardsemiconductor/VELDT-info#ftdi)
 
 ## [FPGA](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 [iCE40 UltraPlus Product Page](https://www.latticesemi.com/en/Products/FPGAandCPLD/iCE40UltraPlus)
@@ -77,6 +85,9 @@ VPP_2V5|VPP|VPP||24
 
 ## [Flash](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 [AT25SF081 Data Sheet PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/AT25SF081.pdf)
+
+## [FTDI](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+[FTDI FT232H Data Sheet PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/DS_FT232H.pdf)
 
 ## [Development Tools](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 

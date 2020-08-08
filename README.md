@@ -14,7 +14,7 @@ VELDT Datasheets &amp; Documentation
       3. [Using Project IceStorm Flow](https://github.com/standardsemiconductor/VELDT-info#using-project-icestorm-flow)
    2. [Clash](https://github.com/standardsemiconductor/VELDT-info#clash)
       1. [Install Clash on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#install-clash-on-ubuntu)
-   3. [Mane (Beta)](https://github.com/standardsemiconductor/VELDT-info#mane)
+   3. [Mane (Beta)](https://github.com/standardsemiconductor/VELDT-info#mane-beta)
       1. [Install Mane from Source on Windows](https://github.com/standardsemiconductor/VELDT-info#install-mane-from-source-on-windows)
       
 **Clicking on any header within this document will return to Table of Contents.**

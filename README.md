@@ -37,6 +37,8 @@ The main functional components of VELDT are:
 [DSP Function Usage Guide PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/DSPFunctionUsageGuideforICE40Devices.pdf)
 
 [iCE40 sysCLOCK PLL Design and Usage Guide PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/iCE40sysCLOCKPLLDesignandUsageGuide.pdf)
+
+[ICE Technology Library PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/SBTICETechnologyLibrary201708.pdf)
 ### [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 [PDF Version](https://github.com/standardsemiconductor/VELDT-info/blob/master/iCE40UltraUltraPlusSG48PinMigration.pdf)
 

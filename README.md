@@ -17,7 +17,7 @@ VELDT Datasheets &amp; Documentation
       1. [Radiant](https://github.com/standardsemiconductor/VELDT-info#radiant)
       3. [iCECube2](https://github.com/standardsemiconductor/VELDT-info#icecube2)
    2. [Clash](https://github.com/standardsemiconductor/VELDT-info#clash)
-      1. [Install Clash on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#install-clash-on-ubuntu)
+      1. [Clash on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#clash-on-ubuntu)
    3. [Mane (Beta)](https://github.com/standardsemiconductor/VELDT-info#mane-beta)
       1. [Install Mane from Source on Windows](https://github.com/standardsemiconductor/VELDT-info#install-mane-from-source-on-windows)
       
@@ -212,7 +212,7 @@ Visit the [Lattice iCECube2 Software](https://www.latticesemi.com/iCEcube2) page
 ### [Clash](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 Visit the [Clash Website](https://clash-lang.org), [Github Repository](https://github.com/clash-lang/clash-compiler), and [Hackage Documentation](http://hackage.haskell.org/package/clash-prelude) for more information.
 
-#### [Install Clash on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+#### [Clash on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 1. Add [GHC PPA](https://launchpad.net/~hvr/+archive/ubuntu/ghc) and install prerequisites:
 ```console
 foo@bar:~$ sudo add-apt-repository -y ppa:hvr/ghc
@@ -240,27 +240,23 @@ The Glorious Glasgow Haskell Compilation System, version yyy
 cabal-install version xxx
 compiled using version xxx of the Cabal library
 ```
-3. Install Clash:
+3. Update Cabal:
 ```console
 foo@bar:~$ cabal update
-foo@bar:~$ cabal install clash-ghc
-foo@bar:~$ echo "export PATH=\$PATH:~/.cabal/bin" >> .bashrc
-foo@bar:~$ . .bashrc
 ```
-
-**Step 3 may fail due to Clash not supporting the latest GHC version.**
-
-If this happens, try removing ghc `sudo apt remove ghc-yyy`, then installing an older GHC version `sudo apt install ghc-zzz`.
 
 4. Verify Clash:
 ```console
 foo@bar:~$ git clone https://github.com/standardsemiconductor/VELDT-blinker-clash.git
 foo@bar:~$ cd VELDT-blinker-clash/
-foo@bar:~/VELDT-blinker-clash$ cabal build
-foo@bar:~/VELDT-blinker-clash$ cabal exec -- clash --verilog Blinker.hs
+foo@bar:~/VELDT-blinker-clash$ cabal run clash --write-ghc-environment-files=always -- Blinker --verilog
 foo@bar:~/VELDT-blinker-clash$ ls verilog/Blinker/Blinker/
 Blinker.manifest Blinker.v
 ```
+
+**Step 4 may fail due to Clash not currently supporting the latest GHC version.**
+
+If this happens, try removing ghc `sudo apt remove ghc-yyy`, then installing an older GHC version `sudo apt install ghc-zzz`.
 
 ### [Mane (Beta)](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 

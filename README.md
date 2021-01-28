@@ -34,6 +34,8 @@ The main functional components of VELDT are:
 ### [Data Sheets](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 [iCE40 UltraPlus Product Page](https://www.latticesemi.com/en/Products/FPGAandCPLD/iCE40UltraPlus)
 
+[iCE40 UltraPlus Family Data Sheet PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/FPGA-DS-02008-1-9-iCE40-UltraPlus-Family-Data-Sheet.pdf)
+
 [iCE40 LED Driver Usage Guide PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/ICE40LEDDriverUsageGuide.pdf)
 
 [DSP Function Usage Guide PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/DSPFunctionUsageGuideforICE40Devices.pdf)

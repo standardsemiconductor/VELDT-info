@@ -130,6 +130,8 @@ foo@bar:~/icestorm$ sudo make install
 ```console
 foo@bar:~$ git clone https://github.com/YosysHQ/nextpnr nextpnr
 foo@bar:~$ cd nextpnr
+foo@bar:~/nextpnr$ git submodule init
+foo@bar:~/nextpnr$ git submodule update
 foo@bar:~/nextpnr$ cmake -DARCH=ice40 -DCMAKE_INSTALL_PREFIX=/usr/local .
 foo@bar:~/nextpnr$ make -j$(nproc)
 foo@bar:~/nextpnr$ sudo make install
@@ -163,6 +165,7 @@ foo@bar:~/icestorm$ sudo make install
 ```console
 foo@bar:~$ cd nextpnr
 foo@bar:~/nextpnr$ git pull
+foo@bar:~/nextpnr$ git submodule update
 foo@bar:~/nextpnr$ cmake -DARCH=ice40 -DCMAKE_INSTALL_PREFIX=/usr/local .
 foo@bar:~/nextpnr$ make -j$(nproc)
 foo@bar:~/nextpnr$ sudo make install

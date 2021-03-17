@@ -32,7 +32,7 @@ The main functional components of VELDT are:
 3. [FTDI](https://github.com/standardsemiconductor/VELDT-info#ftdi)
 
 ## [PCB Datasheets and Dimensions]()
-[Pin Header Datasheet](): [Mouser Product Detail](https://www.mouser.com/ProductDetail/Wurth-Elektronik/61301411121?qs=%2Fha2pyFaduhMmJnB02gxA5ABCVoTu2iJ%252BCdO9DvZHAyBLbCBkJOwig%3D%3D)
+[Pin Header Datasheet](https://github.com/standardsemiconductor/VELDT-info/blob/master/pin-header-datasheet.pdf): [Mouser Product Detail](https://www.mouser.com/ProductDetail/Wurth-Elektronik/61301411121?qs=%2Fha2pyFaduhMmJnB02gxA5ABCVoTu2iJ%252BCdO9DvZHAyBLbCBkJOwig%3D%3D)
 
 [VELDT Dimensions]()
 

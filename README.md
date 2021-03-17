@@ -3,22 +3,23 @@ VELDT Datasheets &amp; Documentation
 
 ## Table of Contents
 1. [Functional Diagram](https://github.com/standardsemiconductor/VELDT-info#functional-diagram)
-2. [FPGA](https://github.com/standardsemiconductor/VELDT-info#fpga) 
+2. [PCB Datasheets and Dimensions]()
+3. [FPGA](https://github.com/standardsemiconductor/VELDT-info#fpga) 
    1. [Data Sheets](https://github.com/standardsemiconductor/VELDT-info#data-sheets)
    1. [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#pin-mapping)
 4. [Flash](https://github.com/standardsemiconductor/VELDT-info#flash)
 5. [FTDI](https://github.com/standardsemiconductor/VELDT-info#ftdi)
-5. [Development Tools](https://github.com/standardsemiconductor/VELDT-info#development-tools)
+6. [Development Tools](https://github.com/standardsemiconductor/VELDT-info#development-tools)
    1. [Project IceStorm](https://github.com/standardsemiconductor/VELDT-info#project-icestorm)
       1. [Install Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#install-project-icestorm-from-source-on-ubuntu)
       2. [Update Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#update-project-icestorm-from-source-on-ubuntu)
       3. [Using Project IceStorm Flow](https://github.com/standardsemiconductor/VELDT-info#using-project-icestorm-flow)
    2. [Lattice](https://github.com/standardsemiconductor/VELDT-info#lattice)
       1. [Radiant](https://github.com/standardsemiconductor/VELDT-info#radiant)
-      3. [iCECube2](https://github.com/standardsemiconductor/VELDT-info#icecube2)
-   2. [Clash](https://github.com/standardsemiconductor/VELDT-info#clash)
+      2. [iCECube2](https://github.com/standardsemiconductor/VELDT-info#icecube2)
+   3. [Clash](https://github.com/standardsemiconductor/VELDT-info#clash)
       1. [Clash on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#clash-on-ubuntu)
-   3. [Mane (Beta)](https://github.com/standardsemiconductor/VELDT-info#mane-beta)
+   4. [Mane (Beta)](https://github.com/standardsemiconductor/VELDT-info#mane-beta)
       1. [Install Mane from Source on Windows](https://github.com/standardsemiconductor/VELDT-info#install-mane-from-source-on-windows)
       
 **Clicking on any header within this document will return to Table of Contents.**
@@ -29,6 +30,11 @@ The main functional components of VELDT are:
 1. [FPGA](https://github.com/standardsemiconductor/VELDT-info#fpga)
 2. [Flash](https://github.com/standardsemiconductor/VELDT-info#flash)
 3. [FTDI](https://github.com/standardsemiconductor/VELDT-info#ftdi)
+
+## [PCB]()
+[Pin Header Datasheet](): [Mouser Product Detail](https://www.mouser.com/ProductDetail/Wurth-Elektronik/61301411121?qs=%2Fha2pyFaduhMmJnB02gxA5ABCVoTu2iJ%252BCdO9DvZHAyBLbCBkJOwig%3D%3D)
+
+[VELDT Dimensions]()
 
 ## [FPGA](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 ### [Data Sheets](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)

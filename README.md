@@ -3,7 +3,7 @@ VELDT Datasheets &amp; Documentation
 
 ## Table of Contents
 1. [Functional Diagram](https://github.com/standardsemiconductor/VELDT-info#functional-diagram)
-2. [PCB Datasheets and Dimensions]()
+2. [PCB Datasheets and Dimensions](https://github.com/standardsemiconductor/VELDT-info/blob/master/README.md#pcb-datasheets-and-dimensions)
 3. [FPGA](https://github.com/standardsemiconductor/VELDT-info#fpga) 
    1. [Data Sheets](https://github.com/standardsemiconductor/VELDT-info#data-sheets)
    1. [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#pin-mapping)
@@ -31,7 +31,7 @@ The main functional components of VELDT are:
 2. [Flash](https://github.com/standardsemiconductor/VELDT-info#flash)
 3. [FTDI](https://github.com/standardsemiconductor/VELDT-info#ftdi)
 
-## [PCB]()
+## [PCB Datasheets and Dimensions]()
 [Pin Header Datasheet](): [Mouser Product Detail](https://www.mouser.com/ProductDetail/Wurth-Elektronik/61301411121?qs=%2Fha2pyFaduhMmJnB02gxA5ABCVoTu2iJ%252BCdO9DvZHAyBLbCBkJOwig%3D%3D)
 
 [VELDT Dimensions]()

@@ -48,6 +48,8 @@ The main functional components of VELDT are:
 
 [iCE40 sysCLOCK PLL Design and Usage Guide PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/iCE40sysCLOCKPLLDesignandUsageGuide.pdf)
 
+[iCE40 Oscillator Usage Guide](https://github.com/standardsemiconductor/VELDT-info/blob/master/FPGA-TN-02008-1-7-iCE40-Oscillator-Usage-Guide.pdf)
+
 [iCE40 SPRAM Usage Guide PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/FPGA-TN-02022-1-2-iCE40-SPRAM-Usage-Guide.pdf)
 
 [ICE Technology Library PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/SBTICETechnologyLibrary201708.pdf)

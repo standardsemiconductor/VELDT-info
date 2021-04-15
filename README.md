@@ -290,11 +290,11 @@ If this happens, try removing ghc `sudo apt remove ghc-yyy`, then installing an 
 3. Install [libusb](https://libusb.info):
    
    **You may need to shut down and restart powershell prior to using `mingw64-pkg`**
+
    <details>
    <summary>**You may need to use a new msys2-keyring package**</summary>
    [From MSYS2 News](https://www.msys2.org/news/):
    > We have released a new msys2-keyring package from that source (and a new installer that includes them) and we are waiting for a bit before uploading new databases and packages to give people time to update. If you don't update the keyring in time, you'll see something like this:
-   ```
    :: Synchronizing package databases...
    downloading mingw32.db...
    downloading mingw32.db.sig...
@@ -317,8 +317,8 @@ If this happens, try removing ghc `sudo apt remove ghc-yyy`, then installing an 
    error: mingw32: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
    error: mingw64: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
    error: msys: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
-   ```
    </details>
+
    ```powershell
    C:\Users\foo> mingw64-pkg install libusb
    ```

@@ -295,7 +295,7 @@ If this happens, try removing ghc `sudo apt remove ghc-yyy`, then installing an 
    <summary><b>You may need to use a new msys2-keyring package</b></summary>
    <p>
    
-   [From MSYS2 News](https://www.msys2.org/news/):
+   [From MSYS2 News (2020-06-29)](https://www.msys2.org/news/):
    > We have released a new msys2-keyring package from that source (and a new installer that includes them) and we are waiting for a bit before uploading new databases and packages to give people time to update. If you don't update the keyring in time, you'll see something like this:
    
    ```
@@ -321,6 +321,45 @@ If this happens, try removing ghc `sudo apt remove ghc-yyy`, then installing an 
    error: mingw32: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
    error: mingw64: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
    error: msys: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
+   ```
+   > We have prepared the following steps to verify and install the new keyring manually after which you should be able to use `pacman -Syu` again:
+
+   ```
+   $ curl -O http://repo.msys2.org/msys/x86_64/msys2-keyring-r21.b39fb11-1-any.pkg.tar.xz
+   $ curl -O http://repo.msys2.org/msys/x86_64/msys2-keyring-r21.b39fb11-1-any.pkg.tar.xz.sig
+
+   $ pacman-key --verify msys2-keyring-r21.b39fb11-1-any.pkg.tar.xz.sig
+   ==> Checking msys2-keyring-r21.b39fb11-1-any.pkg.tar.xz.sig... (detached)
+   gpg: Signature made Mon Jun 29 07:36:14 2020 CEST
+   gpg:                using DSA key AD351C50AE085775EB59333B5F92EFC1A47D45A1
+   gpg: Good signature from "Alexey Pavlov (Alexpux) <alexpux@gmail.com>" [full]
+
+   # pacman -U msys2-keyring-r21.b39fb11-1-any.pkg.tar.xz
+   ```
+
+   > If you can't even import the key and the above command fails like this:
+
+   ```
+   error: msys: key "4A6129F4E4B84AE46ED7F635628F528CF3053E04" is unknown
+   :: Import PGP key 4A6129F4E4B84AE46ED7F635628F528CF3053E04? [Y/n]
+   [...]
+   error: database 'msys' is not valid (invalid or corrupted database (PGP signature))
+   loading packages...
+   error: failed to prepare transaction (invalid or corrupted database)
+   ```
+
+   > ... you have to convince pacman to not care about those databases for a while, for example like this:
+
+   ```
+   # pacman -U --config <(echo) msys2-keyring-r21.b39fb11-1-any.pkg.tar.xz
+   ```
+
+   > If you still see signature errors, resetting your pacman key store might help:
+
+   ```
+   # rm -r /etc/pacman.d/gnupg/
+   # pacman-key --init
+   # pacman-key --populate msys2
    ```
 
    </p>

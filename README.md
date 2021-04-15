@@ -365,6 +365,7 @@ If this happens, try removing ghc `sudo apt remove ghc-yyy`, then installing an 
    </p>
    </details>
 
+   Use `mingw64-pkg` to install libusb:
    ```powershell
    C:\Users\foo> mingw64-pkg install libusb
    ```

@@ -320,6 +320,7 @@ error: mingw64: signature from "David Macek <david.macek.0@gmail.com>" is margin
 error: msys: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
        ```
      <br>
+   </details>
    ```powershell
    C:\Users\foo> mingw64-pkg install libusb
    ```

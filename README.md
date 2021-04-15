@@ -292,7 +292,7 @@ If this happens, try removing ghc `sudo apt remove ghc-yyy`, then installing an 
    **You may need to shut down and restart powershell prior to using `mingw64-pkg`**
 
    <details>
-   <summary>**You may need to use a new msys2-keyring package**</summary>
+   <summary><b>You may need to use a new msys2-keyring package</b></summary>
    [From MSYS2 News](https://www.msys2.org/news/):
    > We have released a new msys2-keyring package from that source (and a new installer that includes them) and we are waiting for a bit before uploading new databases and packages to give people time to update. If you don't update the keyring in time, you'll see something like this:
    :: Synchronizing package databases...

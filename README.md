@@ -293,6 +293,7 @@ If this happens, try removing ghc `sudo apt remove ghc-yyy`, then installing an 
 
    <details>
    <summary><b>You may need to use a new msys2-keyring package</b></summary>
+   <p>
    [From MSYS2 News](https://www.msys2.org/news/):
    > We have released a new msys2-keyring package from that source (and a new installer that includes them) and we are waiting for a bit before uploading new databases and packages to give people time to update. If you don't update the keyring in time, you'll see something like this:
    :: Synchronizing package databases...
@@ -317,6 +318,7 @@ If this happens, try removing ghc `sudo apt remove ghc-yyy`, then installing an 
    error: mingw32: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
    error: mingw64: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
    error: msys: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
+   </p>
    </details>
 
    ```powershell

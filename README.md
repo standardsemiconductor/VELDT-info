@@ -291,35 +291,33 @@ If this happens, try removing ghc `sudo apt remove ghc-yyy`, then installing an 
    
    **You may need to shut down and restart powershell prior to using `mingw64-pkg`**
    <details>
-     <summary>**You may need to use a new msys2-keyring package**</summary>
-     <br>
-       [From MSYS2 News](https://www.msys2.org/news/):
-       > We have released a new msys2-keyring package from that source (and a new installer that includes them) and we are waiting for a bit before uploading new databases and packages to give people time to update. If you don't update the keyring in time, you'll see something like this:
-       ```
-       :: Synchronizing package databases...
-downloading mingw32.db...
-downloading mingw32.db.sig...
-error: mingw32: key "4A6129F4E4B84AE46ED7F635628F528CF3053E04" is unknown
-:: Import PGP key 4096R/87771331B3F1FF5263856A6D974C8BE49078F532, "David Macek <david.macek.0@gmail.com>", created: 2018-01-14? [Y/n]
-error: mingw32: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
-error: failed to update mingw32 (invalid or corrupted database (PGP signature))
+   <summary>**You may need to use a new msys2-keyring package**</summary>
+   [From MSYS2 News](https://www.msys2.org/news/):
+   > We have released a new msys2-keyring package from that source (and a new installer that includes them) and we are waiting for a bit before uploading new databases and packages to give people time to update. If you don't update the keyring in time, you'll see something like this:
+   ```
+   :: Synchronizing package databases...
+   downloading mingw32.db...
+   downloading mingw32.db.sig...
+   error: mingw32: key "4A6129F4E4B84AE46ED7F635628F528CF3053E04" is unknown
+   :: Import PGP key 4096R/87771331B3F1FF5263856A6D974C8BE49078F532, "David Macek <david.macek.0@gmail.com>", created: 2018-01-14? [Y/n]
+   error: mingw32: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
+   error: failed to update mingw32 (invalid or corrupted database (PGP signature))
 
-downloading mingw64.db...
-downloading mingw64.db.sig...
-error: mingw64: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
-error: failed to update mingw64 (invalid or corrupted database (PGP signature))
+   downloading mingw64.db...
+   downloading mingw64.db.sig...
+   error: mingw64: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
+   error: failed to update mingw64 (invalid or corrupted database (PGP signature))
 
-downloading msys.db...
-downloading msys.db.sig...
-error: msys: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
-error: failed to update msys (invalid or corrupted database (PGP signature))
-error: failed to synchronize all databases
+   downloading msys.db...
+   downloading msys.db.sig...
+   error: msys: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
+   error: failed to update msys (invalid or corrupted database (PGP signature))
+   error: failed to synchronize all databases
 
-error: mingw32: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
-error: mingw64: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
-error: msys: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
-       ```
-     <br>
+   error: mingw32: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
+   error: mingw64: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
+   error: msys: signature from "David Macek <david.macek.0@gmail.com>" is marginal trust
+   ```
    </details>
    ```powershell
    C:\Users\foo> mingw64-pkg install libusb

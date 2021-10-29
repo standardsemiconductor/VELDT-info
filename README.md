@@ -120,16 +120,16 @@ VPP_2V5|VPP|VPP||24
 ## [Development Tools](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 
 ### [Project IceStorm](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
-Visit the [Project IceStorm Homepage](http://www.clifford.at/icestorm) and the [Github Repository](https://github.com/cliffordwolf/icestorm) for more information. Note all Project Icestorm tools will be installed relative to `/usr/local/`
+Visit the [Project IceStorm Homepage](https://yosyshq.net/icestorm) and the [Github Repository](https://github.com/YosysHQ/icestorm) for more information. Note all Project Icestorm tools will be installed relative to `/usr/local/`
 
 ####  [Install Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 1. Install Prerequisites:
 ```console
 foo@bar:~$ sudo apt install build-essential clang bison flex libreadline-dev gawk tcl-dev libffi-dev git graphviz xdot pkg-config python python3 libftdi-dev qt5-default python3-dev libboost-all-dev cmake libeigen3-dev
 ```
-2. Install [IceStorm Tools](https://github.com/cliffordwolf/icestorm) (icepack, icebox, iceprog, icetime, chip databases, etc.):
+2. Install [IceStorm Tools](https://github.com/YosysHQ/icestorm) (icepack, icebox, iceprog, icetime, chip databases, etc.):
 ```console
-foo@bar:~$ git clone https://github.com/cliffordwolf/icestorm.git icestorm
+foo@bar:~$ git clone https://github.com/YosysHQ/icestorm.git icestorm
 foo@bar:~$ cd icestorm
 foo@bar:~/icestorm$ make -j$(nproc)
 foo@bar:~/icestorm$ sudo make install
@@ -143,9 +143,9 @@ foo@bar:~/nextpnr$ cmake -DARCH=ice40 -DCMAKE_INSTALL_PREFIX=/usr/local .
 foo@bar:~/nextpnr$ make -j$(nproc)
 foo@bar:~/nextpnr$ sudo make install
 ```
-4. Install [Yosys](http://www.clifford.at/yosys) (Verilog synthesis):
+4. Install [Yosys](https://github.com/YosysHQ/yosys) (Verilog synthesis):
 ```console
-foo@bar:~$ git clone https://github.com/cliffordwolf/yosys.git yosys
+foo@bar:~$ git clone https://github.com/YosysHQ/yosys.git yosys
 foo@bar:~$ cd yosys
 foo@bar:~/yosys$ make -j$(nproc)
 foo@bar:~/yosys$ sudo make install
@@ -161,7 +161,7 @@ This will allow uploading bitstreams as unprivileged user.
 The installation is complete.
 
 #### [Update Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
-1. Update [IceStorm Tools](https://github.com/cliffordwolf/icestorm):
+1. Update [IceStorm Tools](https://github.com/YosysHQ/icestorm):
 ```console
 foo@bar:~$ cd icestorm
 foo@bar:~/icestorm$ git pull
@@ -177,7 +177,7 @@ foo@bar:~/nextpnr$ cmake -DARCH=ice40 -DCMAKE_INSTALL_PREFIX=/usr/local .
 foo@bar:~/nextpnr$ make -j$(nproc)
 foo@bar:~/nextpnr$ sudo make install
 ```
-3. Update [Yosys](http://www.clifford.at/yosys):
+3. Update [Yosys](https://github.com/YosysHQ/yosys):
 ```console
 foo@bar:~$ cd yosys
 foo@bar:~/yosys$ git pull
@@ -197,7 +197,7 @@ foo@bar:~/test$ yosys -p  "synth_ice40 -top Top -json Top.json -dsp -abc2" Top.v
 foo@bar:~/test$ ls
 Baz.v Top.json Top.v
 ```
-Step 1 assumes the top module is named "Top" and located in `Top.v`. `-json` writes the synthesized design to the specified JSON file. `-dsp` means Yosys will use iCE40 UltraPlus DSP cells for large arithmetic. Finally, the `-abc2` switch causes Yosys to run two passes of `abc` for slightly improved logic density. See the [Yosys Homepage](http://www.clifford.at/yosys/) and [Github Repository](https://github.com/YosysHQ/yosys) for more information. For up-to-date help and reference use `yosys -h` and `yosys -h synth_ice40`.
+Step 1 assumes the top module is named "Top" and located in `Top.v`. `-json` writes the synthesized design to the specified JSON file. `-dsp` means Yosys will use iCE40 UltraPlus DSP cells for large arithmetic. Finally, the `-abc2` switch causes Yosys to run two passes of `abc` for slightly improved logic density. See the [Yosys Homepage](https://yosyshq.net/yosys/) and [Github Repository](https://github.com/YosysHQ/yosys) for more information. For up-to-date help and reference use `yosys -h` and `yosys -h synth_ice40`.
 
 2. Place and Route Design:
 ```console
@@ -205,7 +205,7 @@ foo@bar:~/test$ nextpnr-ice40 --up5k --package sg48 --pcf Top.pcf --asc Top.asc 
 foo@bar:~/test$ ls
 Baz.v Top.asc Top.json Top.v
 ```
-For more information about NextPNR see the [Github Repository](https://github.com/YosysHQ/nextpnr), [Project IceStorm Homepage](http://www.clifford.at/icestorm) and `nextpnr-ice40 -h`.
+For more information about NextPNR see the [Github Repository](https://github.com/YosysHQ/nextpnr), [Project IceStorm Homepage](https://yosyshq.net/icestorm) and `nextpnr-ice40 -h`.
 
 3. Pack and Program Bitstream:
 ```console

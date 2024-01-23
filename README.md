@@ -227,28 +227,14 @@ Visit the [Lattice iCECube2 Software](https://www.latticesemi.com/iCEcube2) page
 Visit the [Clash Website](https://clash-lang.org), [Github Repository](https://github.com/clash-lang/clash-compiler), and [Hackage Documentation](http://hackage.haskell.org/package/clash-prelude) for more information.
 
 #### [Clash on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
-1. Add [GHC PPA](https://launchpad.net/~hvr/+archive/ubuntu/ghc) and install prerequisites:
-```console
-foo@bar:~$ sudo add-apt-repository -y ppa:hvr/ghc
-foo@bar:~$ sudo apt update
-foo@bar:~$ sudo apt install -y cabal-install-xxx ghc-yyy
-```
-For users managing multiple GHC versions, note the [PPA description](https://launchpad.net/~hvr/+archive/ubuntu/ghc):
-> The GHC packages install into `/opt/ghc/$VER/` so in order to use them, one way is to bring a particular GHC version into scope by placing the respective `/opt/ghc/$VER/bin` folder early in the PATH environment variable.
-> There's also a `/opt/ghc/bin` (& `/opt/cabal/bin`) folder which contains version-suffixed symlinks to installed GHC versions for convenient use with cabal (e.g. "cabal new-build -w ghc-7.8.4"), as well as symlinks managed by update-alternatives(1) which can be configured via
-> ```
-> sudo update-alternatives --config opt-ghc
-> sudo update-alternatives --config opt-cabal
-> ```
-> Note that `/opt/ghc/bin` also contains a default symlink for `cabal`, so it's enough to include `/opt/ghc/bin` in your PATH to get access to both `cabal` and `ghc`.
-
+1. Install Haskell using [GHCup](https://www.haskell.org/ghcup/)
 2. Update PATH:
 ```console
-foo@bar:~$ echo "export PATH=\$PATH:/opt/ghc/bin" >> .bashrc
+foo@bar:~$ echo "export PATH=\$PATH:\$HOME/.ghcup/bin" >> .bashrc
 foo@bar:~$ . .bashrc
 foo@bar:~$ which ghc && which cabal
-/opt/ghc/bin/ghc
-/opt/ghc/bin/cabal
+/home/foo/.ghcup/bin/ghc
+/home/foo/.ghcup/bin/cabal
 foo@bar:~$ ghc --version && cabal --version
 The Glorious Glasgow Haskell Compilation System, version yyy
 cabal-install version xxx
@@ -270,7 +256,7 @@ Blinker.manifest Blinker.v
 
 **Step 4 may fail due to Clash not currently supporting the latest GHC version.**
 
-If this happens, try removing ghc `sudo apt remove ghc-yyy`, then installing an older GHC version `sudo apt install ghc-zzz`.
+If this happens, try an older GHC version using `ghcup tui`.
 
 ### [Mane (Beta)](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 

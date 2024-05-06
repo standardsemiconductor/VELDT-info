@@ -1,15 +1,16 @@
 # VELDT-info
-VELDT Datasheets &amp; Documentation
+VELDT Gallery, Datasheets &amp; Documentation
 
 ## Table of Contents
-1. [Functional Diagram](https://github.com/standardsemiconductor/VELDT-info#functional-diagram)
-2. [PCB Datasheets and Dimensions](https://github.com/standardsemiconductor/VELDT-info/blob/master/README.md#pcb-datasheets-and-dimensions)
-3. [FPGA](https://github.com/standardsemiconductor/VELDT-info#fpga) 
+1. [Gallery](https://github.com/standardsemiconductor/VELDT-info#gallery)
+2. [Functional Diagram](https://github.com/standardsemiconductor/VELDT-info#functional-diagram)
+3. [PCB Datasheets and Dimensions](https://github.com/standardsemiconductor/VELDT-info/blob/master/README.md#pcb-datasheets-and-dimensions)
+4. [FPGA](https://github.com/standardsemiconductor/VELDT-info#fpga) 
    1. [Data Sheets](https://github.com/standardsemiconductor/VELDT-info#data-sheets)
-   1. [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#pin-mapping)
-4. [Flash](https://github.com/standardsemiconductor/VELDT-info#flash)
-5. [FTDI](https://github.com/standardsemiconductor/VELDT-info#ftdi)
-6. [Development Tools](https://github.com/standardsemiconductor/VELDT-info#development-tools)
+   2. [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#pin-mapping)
+5. [Flash](https://github.com/standardsemiconductor/VELDT-info#flash)
+6. [FTDI](https://github.com/standardsemiconductor/VELDT-info#ftdi)
+7. [Development Tools](https://github.com/standardsemiconductor/VELDT-info#development-tools)
    1. [Project IceStorm](https://github.com/standardsemiconductor/VELDT-info#project-icestorm)
       1. [Install Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#install-project-icestorm-from-source-on-ubuntu)
       2. [Update Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#update-project-icestorm-from-source-on-ubuntu)
@@ -23,6 +24,38 @@ VELDT Datasheets &amp; Documentation
       1. [Install Mane from Source on Windows](https://github.com/standardsemiconductor/VELDT-info#install-mane-from-source-on-windows)
       
 **Clicking on any header within this document will return to Table of Contents.**
+## [Gallery](#table-of-contents)
+
+<details>
+<summary>Main</summary>
+
+![](./gallery/veldt-main.jpeg)
+</details>
+
+<details>
+<summary>Angle right</summary>
+
+![](./gallery/veldt-angle-right.jpeg)
+</details>
+
+<details>
+<summary>Angle</summary>
+
+![](./gallery/veldt-angle.jpeg)
+</details>
+
+<details>
+<summary>Side</summary>
+
+![](./gallery/veldt-side.jpeg)
+</details>
+
+<details>
+<summary>Back</summary>
+
+![](./gallery/veldt-back.jpeg)
+</details>
+
 ## [Functional Diagram](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
 [VELDT Functional Diagram PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/functional-diagram.pdf)
 

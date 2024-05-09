@@ -182,7 +182,7 @@ foo@bar:~/nextpnr$ sudo make install
 ```console
 foo@bar:~$ cd yosys
 foo@bar:~/yosys$ git pull
-foo@bar:~/yosys$ git submodule update --init
+foo@bar:~/yosys$ git submodule update
 foo@bar:~/yosys$ make -j$(nproc)
 foo@bar:~/yosys$ sudo make install
 ```

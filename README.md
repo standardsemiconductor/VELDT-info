@@ -2,26 +2,26 @@
 VELDT Gallery, Datasheets &amp; Documentation
 
 ## Table of Contents
-1. [Gallery](https://github.com/standardsemiconductor/VELDT-info#gallery)
-2. [Functional Diagram](https://github.com/standardsemiconductor/VELDT-info#functional-diagram)
-3. [PCB Datasheets and Dimensions](https://github.com/standardsemiconductor/VELDT-info/blob/master/README.md#pcb-datasheets-and-dimensions)
-4. [FPGA](https://github.com/standardsemiconductor/VELDT-info#fpga) 
-   1. [Data Sheets](https://github.com/standardsemiconductor/VELDT-info#data-sheets)
-   2. [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#pin-mapping)
-5. [Flash](https://github.com/standardsemiconductor/VELDT-info#flash)
-6. [FTDI](https://github.com/standardsemiconductor/VELDT-info#ftdi)
-7. [Development Tools](https://github.com/standardsemiconductor/VELDT-info#development-tools)
-   1. [Project IceStorm](https://github.com/standardsemiconductor/VELDT-info#project-icestorm)
-      1. [Install Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#install-project-icestorm-from-source-on-ubuntu)
-      2. [Update Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#update-project-icestorm-from-source-on-ubuntu)
-      3. [Using Project IceStorm Flow](https://github.com/standardsemiconductor/VELDT-info#using-project-icestorm-flow)
-   2. [Lattice](https://github.com/standardsemiconductor/VELDT-info#lattice)
-      1. [Radiant](https://github.com/standardsemiconductor/VELDT-info#radiant)
-      2. [iCECube2](https://github.com/standardsemiconductor/VELDT-info#icecube2)
-   3. [Clash](https://github.com/standardsemiconductor/VELDT-info#clash)
-      1. [Clash on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#clash-on-ubuntu)
-   4. [Mane (Beta)](https://github.com/standardsemiconductor/VELDT-info#mane-beta)
-      1. [Install Mane from Source on Windows](https://github.com/standardsemiconductor/VELDT-info#install-mane-from-source-on-windows)
+1. [Gallery](#gallery)
+2. [Functional Diagram](#functional-diagram)
+3. [PCB Datasheets and Dimensions](#pcb-datasheets-and-dimensions)
+4. [FPGA](#fpga) 
+   1. [Data Sheets](#data-sheets)
+   2. [Pin Mapping](#pin-mapping)
+5. [Flash](#flash)
+6. [FTDI](#ftdi)
+7. [Development Tools](#development-tools)
+   1. [Project IceStorm](#project-icestorm)
+      1. [Install Project IceStorm from Source on Ubuntu](#install-project-icestorm-from-source-on-ubuntu)
+      2. [Update Project IceStorm from Source on Ubuntu](#update-project-icestorm-from-source-on-ubuntu)
+      3. [Using Project IceStorm Flow](#using-project-icestorm-flow)
+   2. [Lattice](#lattice)
+      1. [Radiant](#radiant)
+      2. [iCECube2](#icecube2)
+   3. [Clash](#clash)
+      1. [Clash on Ubuntu](#clash-on-ubuntu)
+   4. [Mane (Beta)](#mane-beta)
+      1. [Install Mane from Source on Windows](#install-mane-from-source-on-windows)
       
 **Clicking on any header within this document will return to Table of Contents.**
 ## [Gallery](#table-of-contents)
@@ -56,43 +56,43 @@ VELDT Gallery, Datasheets &amp; Documentation
 ![](./gallery/veldt-back.jpeg)
 </details>
 
-## [Functional Diagram](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
-[VELDT Functional Diagram PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/functional-diagram.pdf)
+## [Functional Diagram](#table-of-contents)
+[VELDT Functional Diagram PDF](functional-diagram.pdf)
 
 The main functional components of VELDT are:
-1. [FPGA](https://github.com/standardsemiconductor/VELDT-info#fpga)
-2. [Flash](https://github.com/standardsemiconductor/VELDT-info#flash)
-3. [FTDI](https://github.com/standardsemiconductor/VELDT-info#ftdi)
+1. [FPGA](#fpga)
+2. [Flash](#flash)
+3. [FTDI](#ftdi)
 
-## [PCB Datasheets and Dimensions](https://github.com/standardsemiconductor/VELDT-info/blob/master/README.md#table-of-contents)
-[VELDT Dimensions](https://github.com/standardsemiconductor/VELDT-info/blob/master/veldt_board-dims.svg)
+## [PCB Datasheets and Dimensions](#table-of-contents)
+[VELDT Dimensions](veldt_board-dims.svg)
 
-[Pin Header Datasheet](https://github.com/standardsemiconductor/VELDT-info/blob/master/pin-header-datasheet.pdf): [Mouser Product Detail](https://www.mouser.com/ProductDetail/Wurth-Elektronik/61301411121?qs=%2Fha2pyFaduhMmJnB02gxA5ABCVoTu2iJ%252BCdO9DvZHAyBLbCBkJOwig%3D%3D)
+[Pin Header Datasheet](pin-header-datasheet.pdf): [Mouser Product Detail](https://www.mouser.com/ProductDetail/Wurth-Elektronik/61301411121?qs=%2Fha2pyFaduhMmJnB02gxA5ABCVoTu2iJ%252BCdO9DvZHAyBLbCBkJOwig%3D%3D)
 
-## [FPGA](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
-### [Data Sheets](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+## [FPGA](#table-of-contents)
+### [Data Sheets](#table-of-contents)
 [iCE40 UltraPlus Product Page](https://www.latticesemi.com/en/Products/FPGAandCPLD/iCE40UltraPlus)
 
-[iCE40 UltraPlus Family Data Sheet PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/FPGA-DS-02008-1-9-iCE40-UltraPlus-Family-Data-Sheet.pdf)
+[iCE40 UltraPlus Family Data Sheet PDF](FPGA-DS-02008-1-9-iCE40-UltraPlus-Family-Data-Sheet.pdf)
 
-[iCE40 LED Driver Usage Guide PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/ICE40LEDDriverUsageGuide.pdf)
+[iCE40 LED Driver Usage Guide PDF](ICE40LEDDriverUsageGuide.pdf)
 
-[DSP Function Usage Guide PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/DSPFunctionUsageGuideforICE40Devices.pdf)
+[DSP Function Usage Guide PDF](DSPFunctionUsageGuideforICE40Devices.pdf)
 
-[iCE40 sysCLOCK PLL Design and Usage Guide PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/iCE40sysCLOCKPLLDesignandUsageGuide.pdf)
+[iCE40 sysCLOCK PLL Design and Usage Guide PDF](iCE40sysCLOCKPLLDesignandUsageGuide.pdf)
 
-[iCE40 Oscillator Usage Guide](https://github.com/standardsemiconductor/VELDT-info/blob/master/FPGA-TN-02008-1-7-iCE40-Oscillator-Usage-Guide.pdf)
+[iCE40 Oscillator Usage Guide](FPGA-TN-02008-1-7-iCE40-Oscillator-Usage-Guide.pdf)
 
-[iCE40 SPRAM Usage Guide PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/FPGA-TN-02022-1-2-iCE40-SPRAM-Usage-Guide.pdf)
+[iCE40 SPRAM Usage Guide PDF](FPGA-TN-02022-1-2-iCE40-SPRAM-Usage-Guide.pdf)
 
-[ICE Technology Library PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/SBTICETechnologyLibrary201708.pdf)
+[ICE Technology Library PDF](SBTICETechnologyLibrary201708.pdf)
 
-[Advanced SPI and I2C Usage Guide PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/AdvancediCE40SPII2CHardenedIPUsageGuide.pdf)
+[Advanced SPI and I2C Usage Guide PDF](AdvancediCE40SPII2CHardenedIPUsageGuide.pdf)
 
-### [Pin Mapping](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
-[PDF Version](https://github.com/standardsemiconductor/VELDT-info/blob/master/iCE40UltraUltraPlusSG48PinMigration.pdf)
+### [Pin Mapping](#table-of-contents)
+[PDF Version](iCE40UltraUltraPlusSG48PinMigration.pdf)
 
-[XLSX Excel Version](https://github.com/standardsemiconductor/VELDT-info/blob/master/iCE40UP-5k-Pinout.xlsx)
+[XLSX Excel Version](iCE40UP-5k-Pinout.xlsx)
 FNC|Pin Type|Bank|Differential Pair|ICE40UP-5K-SG48
 ---|--------|----|-----------------|---------------
 IOB_0a|DPIO|2|TRUE_of_IOB_1b|46
@@ -144,18 +144,18 @@ SPI_VCCIO_1|VCCIO|1||22
 VCCPLL|VCCPLL|VCCPLL||29
 VPP_2V5|VPP|VPP||24
 
-## [Flash](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
-[AT25SF081 Data Sheet PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/AT25SF081.pdf)
+## [Flash](#table-of-contents)
+[AT25SF081 Data Sheet PDF](AT25SF081.pdf)
 
-## [FTDI](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
-[FTDI FT232H Data Sheet PDF](https://github.com/standardsemiconductor/VELDT-info/blob/master/DS_FT232H.pdf)
+## [FTDI](#table-of-contents)
+[FTDI FT232H Data Sheet PDF](DS_FT232H.pdf)
 
-## [Development Tools](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+## [Development Tools](#table-of-contents)
 
-### [Project IceStorm](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+### [Project IceStorm](#table-of-contents)
 Visit the [Project IceStorm Homepage](https://yosyshq.net/icestorm) and the [Github Repository](https://github.com/YosysHQ/icestorm) for more information. Note all Project Icestorm tools will be installed relative to `/usr/local/`
 
-####  [Install Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+####  [Install Project IceStorm from Source on Ubuntu](#table-of-contents)
 1. Install Prerequisites:
 ```console
 foo@bar:~$ sudo apt install build-essential clang bison flex libreadline-dev gawk tcl-dev libffi-dev git graphviz xdot pkg-config python python3 libftdi-dev qt5-default python3-dev libboost-all-dev cmake libeigen3-dev
@@ -194,7 +194,7 @@ This will allow uploading bitstreams as unprivileged user.
 
 The installation is complete.
 
-#### [Update Project IceStorm from Source on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+#### [Update Project IceStorm from Source on Ubuntu](#table-of-contents)
 1. Update [IceStorm Tools](https://github.com/YosysHQ/icestorm):
 ```console
 foo@bar:~$ cd icestorm
@@ -222,7 +222,7 @@ foo@bar:~/yosys$ sudo make install
 
 The update is complete.
 
-#### [Using Project IceStorm Flow](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+#### [Using Project IceStorm Flow](#table-of-contents)
 
 1. Synthesize Verilog Source Files:
 ```console
@@ -249,19 +249,19 @@ foo@bar:~/test$ ls
 Baz.v Top.asc Top.bin Top.json Top.v
 foo@bar:~/test$ iceprog Top.bin
 ```
-### [Lattice](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+### [Lattice](#table-of-contents)
 Visit the [Lattice Website](https://latticesemi.com) for more information.
 
-#### [Radiant](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+#### [Radiant](#table-of-contents)
 Visit the [Lattice Radiant Software](https://www.latticesemi.com/Products/DesignSoftwareAndIP/FPGAandLDS/Radiant) page for downloads and documentation.
 
-#### [iCECube2](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+#### [iCECube2](#table-of-contents)
 Visit the [Lattice iCECube2 Software](https://www.latticesemi.com/iCEcube2) page for downloads and documentation.
 
-### [Clash](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+### [Clash](#table-of-contents)
 Visit the [Clash Website](https://clash-lang.org), [Github Repository](https://github.com/clash-lang/clash-compiler), and [Hackage Documentation](http://hackage.haskell.org/package/clash-prelude) for more information.
 
-#### [Clash on Ubuntu](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+#### [Clash on Ubuntu](#table-of-contents)
 1. Install Haskell using [GHCup](https://www.haskell.org/ghcup/)
 2. Update PATH:
 ```console
@@ -293,11 +293,11 @@ Blinker.manifest Blinker.v
 
 If this happens, try an older GHC version using `ghcup tui`.
 
-### [Mane (Beta)](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+### [Mane (Beta)](#table-of-contents)
 
 [Mane](https://github.com/standardsemiconductor/mane) is the open-source tool for loading bitstreams onto VELDT. It is maintained by Standard Semiconductor to ensure optimized performance with VELDT. Visit the [Github Repository](https://github.com/standardsemiconductor/mane) for more information. Please [open an issue](https://github.com/standardsemiconductor/mane/issues) if you have any problems, questions, or suggestions. 
 
-#### [Install Mane from Source on Windows](https://github.com/standardsemiconductor/VELDT-info#table-of-contents)
+#### [Install Mane from Source on Windows](#table-of-contents)
 **The following steps should be run as Administrator on Powershell.** (Right click, `Run as Administrator`)
 1. [Install Chocolatey](https://chocolatey.org/install)
    
@@ -412,7 +412,7 @@ If this happens, try an older GHC version using `ghcup tui`.
    C:\Users\foo> zadig
    ```
    In Zadig, select `Options` -> `List All Devices`. In the dropdown box select `USB <-> Serial Converter (Interface 0)`. On the `Driver` input, select the Up/Down arrows to choose `WinUSB` then click `Replace Driver` button. Close Zadig when the driver installation completes.
-   ![Zadig Screenshot](https://github.com/standardsemiconductor/VELDT-info/blob/master/zadig-screenshot.png)
+   ![Zadig Screenshot](zadig-screenshot.png)
 5. Install [Mane](https://github.com/standardsemiconductor/mane):
    
    **You may need to shut down and restart powershell prior to using `git`**

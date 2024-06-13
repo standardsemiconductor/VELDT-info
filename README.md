@@ -15,6 +15,7 @@ VELDT Gallery, Datasheets &amp; Documentation
       1. [Install Project IceStorm from Source on Ubuntu](#install-project-icestorm-from-source-on-ubuntu)
       2. [Update Project IceStorm from Source on Ubuntu](#update-project-icestorm-from-source-on-ubuntu)
       3. [Using Project IceStorm Flow](#using-project-icestorm-flow)
+      4. [WSL](#wsl)
    2. [Lattice](#lattice)
       1. [Radiant](#radiant)
       2. [iCECube2](#icecube2)
@@ -249,6 +250,11 @@ foo@bar:~/test$ ls
 Baz.v Top.asc Top.bin Top.json Top.v
 foo@bar:~/test$ iceprog Top.bin
 ```
+
+#### [WSL](#table-of-contents)
+
+Use [usbipd](https://github.com/dorssel/usbipd-win) to pass-through the FTDI device to WSL before programming with iceprog. [wsl-usb-gui](https://gitlab.com/alelec/wsl-usb-gui) was simple to install and helpful for graphical configuration.
+
 ### [Lattice](#table-of-contents)
 Visit the [Lattice Website](https://latticesemi.com) for more information.
 
